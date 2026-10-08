@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   color: #171936;
+   background-color: white;
+}
+
+nav {
+   width: 90%;
+   margin: 25px auto;
+   padding: 15px 30px;
+   background-color: #171936;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 10px;
+}
+
+nav h2 {
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+   color: white;
+   text-decoration: none;
+}
+
+button {
+   background-color: #756cff;
+   color: white;
+   border: none;
+   padding: 12px 25px;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.home {
+   width: 90%;
+   margin: 80px auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.home-text {
+    width: 45%;
+}
+
+.home-text h1 {
+   font-size: 60px;
+   margin-bottom: 20px;
+}
+
+.home-text p {
+   line-height: 1.6;
+   margin-bottom: 25px;
+}
+
+.home-image {
+   width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;    
+    object-fit: contain;
+}
+
+.skills {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.skills h2,
+.Portfolio h2 {
+   font-size: 40px;
+   margin-bottom: 50px;
+   color: #914cff;
+}
+
+.skill-box {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.Circle {
+    width: 130px;
+    height: 130px;
+    border: 15px solid #756cff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   font-size: 22px;
+   font-weight: bold;
+}
+
+.skills p {
+   margin-top: 15px;
+}
+
+.About {
+   font-size: 40px;
+   margin-bottom: 50px;
+   text-align: center;
+}
+
+.About-box {
+   background-color: #171936;
+   color: white;
+   padding: 80px 10%;
+   text-align: center;
+   
+}
+
+.About h2 {
+   font-size: 40px;
+   margin-bottom: 50px;
+}
+
+.About-box {
+    background-color: white;
+    color: #171936;
+    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.About-box h3 {
+    font-size: 35px;
+    color: #914cff;
+}
+
+.About-box p {
+    font-size: 18px;
+   margin-top: 10px;
+}
+
+.Portfolio {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.projects {
+    display: flex;
+    gap: 30px;
+}
+
+.project {
+    width: 33%;
+   padding: 40px 25px;
+   background-color: white;
+   box-shadow: 0 5px 20px #ddd;
+   border-radius: 15px;
+}
+
+.project h3 {
+    color: #914cff;
+    margin-bottom: 15px;
+}
+
+footer {
+   background-color: #eeeeff;
+   text-align: center;
+   padding: 30px;
+}
+
+footer h3 {
+   color: #914cff;
+   margin-bottom: 10px;
+}
+
+@media screen(max-width: 768px;)  {
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+}
+  .home {
+    flex-direction: column;
+}
+  .home-text,
+  .home-image {
+     width: 100%;
+}
+
+.home-text h1 {
+    font-size: 45px;
+}
+
+.skill-box {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.About-box {
+   flex-direction: column;
+   gap: 30px;
+}
+
+.projects {
+   flex-direction: column;
+}
+
+.project {
+    width: 100%;
+}
+
+}
